@@ -14,7 +14,7 @@ data_all.head()
 
 variables = ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare']
 
-
+X = data_all[variables]
 
 y = data_all['Survived']
 
