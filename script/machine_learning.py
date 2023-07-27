@@ -130,7 +130,6 @@ for i in range(0, len(estimators)):
         acc_model6 = accuracy_score(y_test, predict)
         accuracy.append(acc_model6)
         print('accuracy:', acc_model6, 'estimators:', estimators[i], 'depth:', depth[j])
-        model.fit(X_train, y_train)
         
 max(accuracy)
 model6 = GradientBoostingClassifier(n_estimators=50, max_depth=10)
